@@ -32,6 +32,11 @@ public class Main_Menu extends javax.swing.JFrame {
         jPanel1.add(show_btn);
 
         search_btn.setText("Search");
+        search_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                search_btnActionPerformed(evt);
+            }
+        });
         jPanel1.add(search_btn);
 
         addMem_btn.setText("Add Member");
@@ -80,6 +85,13 @@ public class Main_Menu extends javax.swing.JFrame {
         newMem.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_addMem_btnActionPerformed
+
+    private void search_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search_btnActionPerformed
+        // TODO add your handling code here:
+        Search searchWindow = new Search();
+        searchWindow.setVisible(true); 
+        this.dispose();
+    }//GEN-LAST:event_search_btnActionPerformed
 
     /**
      * @param args the command line arguments
