@@ -247,6 +247,7 @@ public class Info_Member extends javax.swing.JFrame {
         // TODO add your handling code here:
         Main_Menu mainMenu = new Main_Menu();
         mainMenu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public void displayMemberInfo(Member member) {
